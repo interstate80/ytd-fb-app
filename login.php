@@ -5,7 +5,7 @@
 	'default_graph_version' => 'v2.5',]);
 
 $helper = $fb->getRedirectLoginHelper();
-$permissions = ['email', 'user_likes']; // optional
+$permissions = ['email', 'user_likes', 'user_posts']; // optional
 $loginUrl = $helper->getLoginUrl('http://fb-app.yatakdumayu.ru/login-callback.php', $permissions);
 
 echo '<a href="' . $loginUrl . '">Войти с использованием учетной записи Facebook!</a>';
